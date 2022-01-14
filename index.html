@@ -3,22 +3,23 @@
     <head>        
           <meta charset="UTF-8">        
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-                        <title>s5 EC timetable</title>  
-                        <link rel="stylesheet" href="./css/main.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+          <title>s5 EC timegen</title>  
+          <link rel="stylesheet" href="./css/main.css">
     </head>  
-    <body>      
-        <script src="./js/main.js">
-           
-        </script>     
-        <button onclick="table(0)">Monday</button>
-        <button onclick="table(1)">Tuesday</button>
-        <button onclick="table(2)">Wednesday</button>
-        <button onclick="table(3)">Thuesday</button>
-        <button onclick="table(4)">Friday</button>
-        <table style="border: 1px solid black;">
-            
-            
-        </table>
+    <body onload="gen('auto')">      
+        <script src="./js/main.js"></script>  
+
+        <div class="father-button">
+            <button onclick="gen(0)" class='btn'>Monday</button>
+            <button onclick="gen(1)" class='btn'>Tuesday</button>
+            <button onclick="gen(2)" class='btn'>Wednesday</button>
+            <button onclick="gen(3)" class='btn'>Thuesday</button>
+            <button onclick="gen(4)" class='btn'>Friday</button>
+        </div>
+
+        <div class="father">
+          
+        </div>
     </body>    
 </html>

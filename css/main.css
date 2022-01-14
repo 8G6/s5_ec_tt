@@ -1,9 +1,71 @@
-table,td,th{
-    border: solid 1px black;
+/* @import url(./mobile.css); */
+
+
+
+body{
+    background-image: url("../img/blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-table{
-    width: 100%;
+
+.father-button,.father{
+    display: flex;
+    justify-content: center;
 }
-td{
-    text-emphasis: bold;
+
+.father{
+    position: absolute;
+    align-items: center;
+    flex-direction:row;
+    top:25vh; 
+    width:90vw;
+    height: 45vh;
+    left: 5vw;
+    background-color: rgb(252, 248, 248);
+    opacity: 0.8;
+}
+
+.child{
+    height:20vh;
+    border: 2px solid black;
+    box-shadow: 2px 2px 8px rgb(29, 27, 27);
+    width: 15vh;
+    float: below;
+    text-align: center;
+    align-items: center;
+    margin: 1vw;
+    background-color: rgb(22, 132, 160);
+}
+.per{
+    font-size: 35px;
+}
+
+.sub{
+    font-size: 25px;
+}
+
+.time{
+    background-color: black;
+    color: wheat;
+    position: absolute;
+    top: 55%;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.break{
+    background-color: green;
+}
+.lbreak{
+    background-color: lightgreen
+}
+@media screen and (max-width: 500px){
+    body{
+        background-image: url("../img/mob.jpg");
+    }
+    .father{
+        flex-direction:column;
+        width: 90vw;
+        height: 20vh;
+    }
 }
